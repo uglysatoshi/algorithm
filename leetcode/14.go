@@ -1,8 +1,6 @@
-package main
+package leetcode
 
-import "fmt"
-
-func longestCommonPrefix(strs []string) string {
+func LongestCommonPrefix(strs []string) string {
 
 	length := len(strs[0])
 
@@ -29,10 +27,4 @@ func longestCommonPrefix(strs []string) string {
 	}
 
 	return r
-}
-
-func main() {
-	fmt.Printf("%s\n", longestCommonPrefix([]string{"flower", "flow", "flight"}))
-	fmt.Printf("%s\n", longestCommonPrefix([]string{"bigger", "banger", "barbie"}))
-
 }

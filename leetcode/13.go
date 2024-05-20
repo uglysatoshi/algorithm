@@ -1,8 +1,6 @@
-package main
+package leetcode
 
-import "fmt"
-
-func romanToInt(s string) int {
+func RomanToInt(s string) int {
 	m := make(map[rune]int)
 
 	m['I'] = 1
@@ -26,8 +24,4 @@ func romanToInt(s string) int {
 	}
 
 	return r
-}
-
-func main() {
-	fmt.Printf("%v\n", romanToInt("III"))
 }

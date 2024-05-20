@@ -1,4 +1,4 @@
-package main
+package allcups
 
 import "fmt"
 
@@ -21,7 +21,7 @@ func moveZerosToEnd(arr []int) []int {
 	return nonZeros
 }
 
-func main() {
+func DZ_1_2() {
 	var N int
 	_, _ = fmt.Scan(&N)
 	arr := make([]int, N)

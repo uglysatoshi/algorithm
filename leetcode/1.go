@@ -1,8 +1,6 @@
-package main
+package leetcode
 
-import "fmt"
-
-func twoSum(nums []int,
+func TwoSum(nums []int,
 
 	target int) []int {
 	answer := make([]int, 2)
@@ -19,11 +17,4 @@ func twoSum(nums []int,
 		}
 	}
 	return nil
-}
-
-func main() {
-	// testcases
-	fmt.Printf("%v\n", twoSum([]int{2, 7, 11, 15}, 9))
-	fmt.Printf("%v\n", twoSum([]int{3, 2, 4}, 6))
-	fmt.Printf("%v\n", twoSum([]int{3, 3}, 6))
 }

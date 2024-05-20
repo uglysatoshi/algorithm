@@ -6,7 +6,7 @@ import (
 	"sort"
 )
 
-func main() {
+func z1() {
 	var arr = make([]float64, 3)
 	for i := 0; i < len(arr); i++ {
 		_, err := fmt.Scan(&arr[i])

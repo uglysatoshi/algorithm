@@ -1,11 +1,10 @@
-package main
+package leetcode
 
 import (
-	"fmt"
 	"strconv"
 )
 
-func isPalindrome(x int) bool {
+func IsPalindrome(x int) bool {
 	s := strconv.Itoa(x)
 	return s == reverse(s)
 }
@@ -16,9 +15,4 @@ func reverse(s string) string {
 		chars[i], chars[j] = chars[j], chars[i]
 	}
 	return string(chars)
-}
-
-func main() {
-	fmt.Printf("%t\n", isPalindrome(121))
-	fmt.Printf("%t\n", isPalindrome(-121))
 }

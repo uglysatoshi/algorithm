@@ -1,8 +1,8 @@
-package main
+package allcups
 
 import "fmt"
 
-func main() {
+func DZ_3_1() {
 	var n int
 	_, _ = fmt.Scan(&n)
 	arr := make([]int, n)
