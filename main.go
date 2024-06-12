@@ -1,10 +1,10 @@
 package main
 
 import (
-	"coderun/codewars"
+	"algorithm/codewars"
 	"fmt"
 )
 
 func main() {
-	fmt.Print(codewars.GetSum(-1, 2))
+	fmt.Print(codewars.NbYear(1500000, 0.25, -1000, 2000000))
 }

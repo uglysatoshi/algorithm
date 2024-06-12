@@ -1,3 +1,3 @@
-module coderun
+module algorithm
 
 go 1.21
