@@ -1,10 +1,10 @@
 package main
 
 import (
-	"algorithm/codewars"
-	"fmt"
+    "algorithm/leetcode"
+    "fmt"
 )
 
 func main() {
-	fmt.Print(codewars.NbYear(1500000, 0.25, -1000, 2000000))
+    fmt.Println(leetcode.ScoreOfString("hello"))
 }
