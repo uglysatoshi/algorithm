@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-    fmt.Println(leetcode.ScoreOfString("hello"))
+    fmt.Println(leetcode.ClearDigits("cgrgkrr"))
 }
