@@ -1,12 +1,9 @@
 package main
 
 import (
-    "algorithm/leetcode"
-    "fmt"
+	allcups "algorithm/all-cups"
 )
 
 func main() {
-    nums := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
-
-    fmt.Println(nums[:leetcode.RemoveDuplicates(nums)])
+	allcups.DZ_4_1()
 }
