@@ -1,10 +1,5 @@
 package leetcode
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func middleNode(head *ListNode) *ListNode {
 	cnt := 0
 	for cur := head; cur != nil; cur = cur.Next {
