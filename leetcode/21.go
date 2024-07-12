@@ -14,9 +14,9 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 		curr = curr.Next
 	}
 	if list1 != nil {
-		final.Next = list1
+		curr.Next = list1
 	} else {
-		final.Next = list2
+		curr.Next = list2
 	}
 	return final.Next
 }
