@@ -1,9 +1,10 @@
 package main
 
 import (
-	allcups "algorithm/all-cups"
+	"algorithm/leetcode"
+	"fmt"
 )
 
 func main() {
-	allcups.DZ_4_1()
+	fmt.Println(leetcode.IsValid("(({[]}))"))
 }
