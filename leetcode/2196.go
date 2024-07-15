@@ -1,15 +1,13 @@
 package leetcode
 
 func createBinaryTree(descriptions [][]int) *TreeNode {
-
 	m := make(map[int]*TreeNode)
-	var children []int
+	hasParent := make(map[int]bool)
 	for _, description := range descriptions {
 		parent := description[0]
 		child := description[1]
 		left := description[2]
-
-		children = append(children, child)
+		hasParent[child] = true
 		curr, exist := m[parent]
 		if !exist {
 			curr = &TreeNode{
@@ -37,23 +35,11 @@ func createBinaryTree(descriptions [][]int) *TreeNode {
 			curr.Right = childNode
 		}
 	}
-
-	key := -1
+	var root *TreeNode
 	for _, description := range descriptions {
-		parent := description[0]
-		if !contains(children, parent) {
-			key = parent
+		if !hasParent[description[0]] {
+			root = m[description[0]]
 		}
 	}
-
-	return m[key]
-}
-
-func contains(slice []int, item int) bool {
-	for _, v := range slice {
-		if v == item {
-			return true
-		}
-	}
-	return false
+	return root
 }
