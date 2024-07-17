@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(leetcode.NumJewelsInStones("aA", "aAAbbbb"))
+	fmt.Println(leetcode.ClimbStairs(3))
 }
