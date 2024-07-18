@@ -3,8 +3,8 @@ package leetcode
 import "strings"
 
 func getDirections(root *TreeNode, startValue int, destValue int) string {
-	s := dfs(root, []byte{}, startValue)
-	d := dfs(root, []byte{}, destValue)
+	s := dfs2096(root, []byte{}, startValue)
+	d := dfs2096(root, []byte{}, destValue)
 	i := 0
 	for len(s) > i && len(d) > i && s[i] == d[i] {
 		i++
@@ -14,19 +14,19 @@ func getDirections(root *TreeNode, startValue int, destValue int) string {
 	return pU + pD
 }
 
-func dfs(r *TreeNode, a []byte, t int) []byte {
+func dfs2096(r *TreeNode, a []byte, t int) []byte {
 	if r.Val == t {
 		return a
 	}
 	if r.Left != nil {
 		n := append(a, 'L')
-		if f := dfs(r.Left, n, t); f != nil {
+		if f := dfs2096(r.Left, n, t); f != nil {
 			return f
 		}
 	}
 	if r.Right != nil {
 		n := append(a, 'R')
-		if f := dfs(r.Right, n, t); f != nil {
+		if f := dfs2096(r.Right, n, t); f != nil {
 			return f
 		}
 	}
